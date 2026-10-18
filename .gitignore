@@ -1,0 +1,44 @@
+# Local .terraform directories (provider binaries, modules - can be hundreds of MB)
+**/.terraform/*
+
+# State files - contain resource IDs, IPs and sometimes secrets in plain text
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files - often hold secrets or account-specific values.
+# Commit a sanitized example instead (e.g. terraform.tfvars.example)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Saved plan files - binary, may contain sensitive values
+*.tfplan
+tfplan*
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# Lock info left behind by an interrupted run
+.terraform.tfstate.lock.info
+
+# Generated SSH keys / credentials
+*.pem
+*.key
+.env
+
+# OS / editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
